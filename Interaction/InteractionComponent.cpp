@@ -28,11 +28,7 @@ void UInteractionComponent::InteractWithInteractable()
 	{
 		SortActors();
 
-		for (const auto& ActorToInteract : ActorsToInteract)
-		{
-			ExecuteInteract(ActorToInteract);
-			return;
-		}
+		ExecuteInteract(ActorsToInteract[0]);
 	}
 }
 
